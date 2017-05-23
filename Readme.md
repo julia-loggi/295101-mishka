@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Семенова](https://up.htmlacademy.ru/adaptive/11/user/295101).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Иванец].
 
 ---
 
