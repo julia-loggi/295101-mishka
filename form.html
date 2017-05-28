@@ -33,19 +33,23 @@
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
           <div class="order-form__content">
-            <form class="order-form__content-inner" action="https://echo.htmlacademy.ru" method="post">
+            <form class="order-form__content" action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="order-form__item">
-                <legend class="order-form__item-name">Тип</legend>
-                <label>
-                  <input type="radio" name="type" value="interior" checked>Аксессуар для интерьера
-                </label>
-                <label>
-                  <input type="radio" name="type" value="toy">Детская игрушка
-                </label>
+                <legend class="order-form__title">Тип</legend>
+                  <div class="field-radio__items">
+                    <label class="field-radio__item">
+                      <input class="field-radio__input" type="radio" name="size" value="s" checked>
+                      <span class="field-radio__text">Аксессуар для интерьера</span>
+                    </label>
+                    <label class="field-radio__item">
+                      <input class="field-radio__input" type="radio" name="size" value="m" checked>
+                      <span class="field-radio__text">Детская игрушка</span>
+                    </label>
+                  </div>
               </fieldset>
 
               <fieldset class="order-form__item">
-                <legend class="order-form__item-name">Цвет</legend>
+                <legend class="order-form__title">Цвет</legend>
                 <label>
                   <input type="checkbox" name="white" checked>Белый
                 </label>
@@ -67,7 +71,7 @@
               </fieldset>
 
               <fieldset class="order-form__item">
-                <legend class="order-form__item-name">ФИО</legend>
+                <legend class="order-form__title">ФИО</legend>
                 <label for="name">Имя:</label>
                 <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
                 <label for="surname">Фамилия:</label>
