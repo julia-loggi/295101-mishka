@@ -33,8 +33,8 @@
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
           <div class="form__content">
-            <form class="form__content" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset class="form__item">
+            <form class="form__items" action="https://echo.htmlacademy.ru" method="post">
+              <div class="form__item">
                 <legend class="form__title">Тип</legend>
                   <div class="field-radio__items">
                     <label class="field-radio__item">
@@ -46,9 +46,9 @@
                       <span class="field-radio__text">Детская игрушка</span>
                     </label>
                   </div>
-              </fieldset>
+              </div>
 
-              <fieldset class="form__item">
+              <div class="form__item">
                 <legend class="form__title">Цвет</legend>
                 <div class="field-checkbox__items">
                   <label class="field-checkbox__item">
@@ -76,9 +76,9 @@
                     <span class="field-chekbox__text">Оранжевый</span>
                   </label>
                 </div>
-              </fieldset>
+              </div>
 
-              <fieldset class="form__item">
+              <div class="form__item">
                 <legend class="form__title">ФИО</legend>
                 <label for="name">Имя:</label>
                 <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
@@ -86,19 +86,19 @@
                 <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
                 <label for="patronymic">Отчество:</label>
                 <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
-              </fieldset>
+              </div>
 
-              <fieldset class="form__item">
+              <div class="form__item">
                 <label for="tel">тел</label>
                 <input type="tel" name="tel" autocomplete="on" id="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
                 <label for="email">e-mail</label>
                 <input type="email" name="email" autocomplete="on" id="email" placeholder="Ваш e-mail*" required>
-              </fieldset>
+              </div>
 
-              <fieldset class="form__item">
+              <div class="form__item">
                 <legend class="form__item-name">Доп</legend>
                 <textarea placeholder="Опишите все ваши пожелания к заказу"></textarea>
-              </fieldset>
+              </div>
               <p class="form__claim">*Поля обязательны для заполнения</p>
               <input class="form__order btn" type="submit" value="Отправить заказ">
             </form>
