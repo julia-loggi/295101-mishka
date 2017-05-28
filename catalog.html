@@ -102,22 +102,24 @@
 
     <div class="modal-basket">
       <div class="modal-basket__wrapper">
-        <h2 class="madal-basket__title">Добавить в корзину</h2>
-        <form class="modal-basket__form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal-basket__form-title">Выберите размер:</div>
-        <div class="modal-basket__field-wrapper">
-          <label class="modal-basket__radio-wrapper">
-              <input type="radio" name="size" value="s" checked>s
-          </label>
-          <label class="modal-basket__radio-wrapper">
-              <input type="radio" name="size" value="m" checked>m
-          </label>
-          <label class="modal-basket__radio-wrapper">
-              <input type="radio" name="size" value="l" checked>l
-          </label>
+        <h2 class="modal-basket__title">Добавить в корзину</h2>
+        <div class="modal-basket__form">
+          <form class="modal-basket__form-inner" action="https://echo.htmlacademy.ru" method="post">
+          <div class="modal-basket__form-title">Выберите размер:</div>
+          <div class="modal-basket__field-wrapper">
+            <label class="modal-basket__radio-wrapper">
+                <input type="radio" name="size" value="s" checked>s
+            </label>
+            <label class="modal-basket__radio-wrapper">
+                <input type="radio" name="size" value="m" checked>m
+            </label>
+            <label class="modal-basket__radio-wrapper">
+                <input type="radio" name="size" value="l" checked>l
+            </label>
+          </div>
+          <input type="submit" class="modal-basket-order btn btn--green" value="Добавить">
+          </form>
         </div>
-        <input type="submit" class="modal-basket-order btn btn--green" value="Добавить">
-        </form>
       </div>
     </div>
 
