@@ -100,24 +100,27 @@
       </div>
     </footer>
 
-    <div class="modal-basket">
-      <div class="modal-basket__wrapper">
-        <h2 class="modal-basket__title">Добавить в корзину</h2>
-        <div class="modal-basket__form">
-          <form class="modal-basket__form-inner" action="https://echo.htmlacademy.ru" method="post">
-          <div class="modal-basket__form-title">Выберите размер:</div>
-          <div class="modal-basket__field-wrapper">
-            <label class="modal-basket__radio-wrapper">
-                <input type="radio" name="size" value="s" checked>s
+    <div class="modal">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <div class="field-radio">
+          <form class="field-radio__inner" action="https://echo.htmlacademy.ru" method="post">
+          <div class="field-radio__title">Выберите размер:</div>
+          <div class="field-radio__items">
+            <label class="field-radio__item">
+                <input class="field-radio__input" type="radio" name="size" value="s" checked>
+                <span class="field-radio__text">s</span>
             </label>
-            <label class="modal-basket__radio-wrapper">
-                <input type="radio" name="size" value="m" checked>m
+            <label class="field-radio__item">
+                <input class="field-radio__input" type="radio" name="size" value="m" checked>
+                <span class="field-radio__text">m</span>
             </label>
-            <label class="modal-basket__radio-wrapper">
-                <input type="radio" name="size" value="l" checked>l
+            <label class="field-radio__item">
+                <input class="field-radio__input" type="radio" name="size" value="l" checked>
+                <span class="field-radio__text">l</span>
             </label>
           </div>
-          <input type="submit" class="modal-basket-order btn btn--green" value="Добавить">
+          <input type="submit" class="modal-order btn btn--green" value="Добавить">
           </form>
         </div>
       </div>
