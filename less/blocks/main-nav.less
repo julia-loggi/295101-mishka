@@ -1,7 +1,29 @@
 .main-nav {
+  display: none;
+  width: 320px;
+  margin: 0 auto;
   background-color: @bg-color-main;
   color: @color-secondary;
   font-size: @font-size-tertiary;
   line-height: @line-height-secondary;
-  font-weight: 700;
+  font-weight: 700;  
+}
+
+.main-nav__wrapper {
+
+}
+
+.main-nav__list,
+.main-nav__user {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+  
+@media @tablet-width {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
 }
