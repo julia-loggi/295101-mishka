@@ -3,3 +3,46 @@
   font-size: @font-size-main;
   line-height: @line-height-main;
 }
+
+.reviews__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.reviews__title {
+  margin: 0;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author-name {
+  font-weight: 700;
+}
+
+.reviews__author-name,
+.reviews__author-link {
+  font-style: normal;
+}
+
+.reviews__btn {
+  order: 2;
+}
+
+@media @tablet-width {
+  .reviews__wrapper {
+    width: 668px;
+    padding: 0 50px;
+  }
+}
+
+@media @desktop-width {
+  .reviews__wrapper {
+    width: 877px;
+    padding: 0 50px 0 230px;
+  }
+}

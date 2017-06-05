@@ -1,6 +1,63 @@
 .about {
+  margin-top: 30px;
   color: @color-main;
   font-size: @font-size-tertiary;
   line-height: @line-height-secondary;
   font-weight: 700;
+}
+
+.about__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.about__title {
+  margin: 0;
+}
+
+.about__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__item {
+  padding: 60px 0 30px;
+}
+
+@media @tablet-width {
+  .about__wrapper {
+  
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  .about__item {
+  
+    width: 305px;
+  }
+  
+  .about__item--price,
+  .about__item--fabricator {
+    order: 2;
+  }
+  
+  .about__item--likes,
+  .about__item--package {
+    order: 3;
+  }
+}
+
+@media @desktop-width {
+  .about__wrapper {
+    width: 700px;
+    padding: 0 225px;
+  }
+  
+  .about__list {
+    justify-content: space-between;
+}
 }
