@@ -11,22 +11,26 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
-          <img src="http://placehold.it/100x45" width="100" height="45" alt="Магазин Мишка">
+          <img src="http://placehold.it/100x45" width="95" height="45" alt="Магазин Мишка">
         </div>
-        <nav class="main-nav"> <!-- main-nav-open — для открытого состояния меню -->
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--shown"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-              <li class="main-nav__item main-nav__item--shown"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Новые поступления</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Распродажа</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+              <li class="main-nav__item main-nav__item--hidden"><a class="main-nav__link" href="#">Новые поступления</a></li>
+              <li class="main-nav__item main-nav__item--hidden"><a class="main-nav__link" href="#">Распродажа</a></li>
             </ul>
+            
             <ul class="main-nav__user">
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+              <li class="main-nav__user-item"><a class="main-nav__link main-nav__user-link" href="#">Поиск по сайту</a></li>
+              <li class="main-nav__user-item"><a class="main-nav__link main-nav__user-link" href="#">Корзина: пока пуста</a></li>
             </ul>
           </div>
         </nav>
+        <span class="page-header__text">Бесплатная доставка по России</span>
       </div>
     </header>
 
@@ -176,5 +180,23 @@
       </div>
     </div>
 
+      <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
+    
+    
   </body>
 </html>
