@@ -1,10 +1,19 @@
 .table {
+  width: 100%;
   font-size: @font-size-main;
   line-height: @line-height-tertiary;
+  border-collapse: collapse;
 }
 
 .table__row {
-  display: block;
-  padding: 10px 0;
+  display: flex;
   border-bottom: 1px solid @color-main;
+}
+
+.table__col {
+  padding: 10px 0; 
+}
+
+.col-1 {
+  width: 95px;
 }

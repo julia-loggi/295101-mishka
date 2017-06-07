@@ -1,5 +1,5 @@
 .page-header {
-
+  position: relative;
   background-color: @bg-color-main;
   min-height: 78px;
 }
@@ -7,7 +7,7 @@
 .page-header__wrapper {
   width: 320px;
   margin: 0 auto;
-  border-bottom: 1px solid @color-main;
+  //border-bottom: 1px solid @color-main;
 }
 
 .page-header__logo {
@@ -31,19 +31,25 @@
 
 
 @media @tablet-width {
+  .page-header {
+    max-height: 88px;
+  }
+  
   .page-header__wrapper {
     width: 668px;
     padding: 0 50px;
   }
 
   .page-header__logo {
+    position: absolute;
+    z-index: 4;
     height: 88px;
     margin: 0;
   }
 
   .page-header__logo img {
-  width: 118px;
-  height: 50px;
+    width: 118px;
+    height: 50px;
   }
 }
 
@@ -54,6 +60,7 @@
   }
 
   .page-header__logo {
-    margin: 0 auto;
+    left: 45%;
+    width: 150px;
   }
 }

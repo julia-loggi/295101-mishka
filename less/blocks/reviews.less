@@ -1,18 +1,22 @@
 .reviews {
+  margin-top: 45px;
   color: @color-main;
   font-size: @font-size-main;
   line-height: @line-height-main;
+  
 }
 
 .reviews__wrapper {
   display: flex;
   flex-wrap: wrap;
   width: 260px;
+  height: 650px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
 .reviews__title {
+  font-size: 25px;
   margin: 0;
 }
 
@@ -38,6 +42,13 @@
     width: 668px;
     padding: 0 50px;
   }
+}
+
+.btn--prev,
+.btn--next {
+  width: 50%;
+  font-size: 0;
+  cursor: pointer;
 }
 
 @media @desktop-width {
