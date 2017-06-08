@@ -4,3 +4,56 @@
   line-height: @line-height-quaternary;
   font-weight: 700;
 }
+
+.page-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 120px;
+  justify-content: space-around;
+  width: 260px;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__social {
+  display: flex;
+  font-size: 0;
+  width: 100%;
+}
+
+.page-footer__copyright {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.page-footer__copyright-text{
+  align-self: center;
+}
+
+@media @tablet-width {
+  .page-footer__wrapper {
+    align-items: center;
+    width: 668px;
+    padding: 0 50px;
+  }
+  
+  .page-footer__logo {
+    display: flex;
+    width: 106px;
+    height: 45px;
+  }
+  
+}
+
+@media @desktop-width {
+  .page-footer__wrapper {
+   
+    width: 1050px;
+    padding: 0 50px;
+  }
+}
