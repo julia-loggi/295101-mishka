@@ -24,7 +24,6 @@
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  height: 715px;
   list-style: none;
 }
 
@@ -34,7 +33,6 @@
 
 @media @tablet-width {
   .about__wrapper {
-
     width: 668px;
     padding: 0 50px;
   }
@@ -46,20 +44,24 @@
   }
 
   .about__list {
-    flex-direction: column;
     justify-content: space-between;
-    height: 415px;
     font-size: @font-size-tertiary-m;
     line-height: @line-height-secondary-m;
-    height: 415px;
-    font-size: 20px;
-    line-height: 22px;
   }
 
   .about__item {
     width: 305px;
   }
 
+  .about__item--price,
+  .about__item--fabricator {
+    order: 2;
+  }
+
+  .about__item--likes,
+  .about__item--package {
+    order: 3;
+  }
 }
 
 @media @desktop-width {

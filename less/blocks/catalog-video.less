@@ -1,28 +1,16 @@
 .catalog-video {
+  display: flex;
+  flex-wrap: wrap;
   font-size: @font-size-secondary;
   line-height: @line-height-secondary;
   color: @color-main;
   margin-bottom: 30px;
 }
 
-.catalog-video__wrapper {
-  
-  width: 260px;
-  margin: 0 auto;
-  padding: 0 30px;
-  
-}
-
-.catalog-video__container {
-  display: flex;
-  flex-wrap: wrap;
-  border: 1px solid red;
-
-}
 
 .catalog-video__title {
   margin: 0;
-  padding-left: 90px;
+  padding: 25px 40px 25px 90px;
 }
 
 .catalog-video__video {
@@ -30,9 +18,24 @@
 }
 
 .catalog-video__desc {
+  padding: 30px;
   margin: 0;
+  line-height: @line-height-secondary;
 }
 
 .catalog-video__play-btn {
   position: absolute;
+}
+
+@media @tablet-width {
+  .catalog-video__title {
+    padding-bottom: 0;
+    font-size: 20px;
+  }
+  
+  .catalog-video__video {
+    order: -1;
+    width: 100%;
+    height: 455px;
+  }
 }
