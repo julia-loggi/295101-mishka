@@ -1,4 +1,80 @@
 .modal {
+  position: fixed;
+  top: 30%;
+  z-index: 30;
+  display: none;
+  
   font-size: @font-size-h2;
   line-height: @line-height-main;
+}
+
+
+.modal__wrapper {
+  
+  
+ 
+  width: 320px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.modal--show {
+  display: block;
+}
+
+
+.modal--close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+
+  width: 16px;
+  height: 16px;
+
+  font-size: 0;
+
+  border: 0;
+  cursor: pointer;
+  background-color: #f8f7f4;
+  outline: none;
+}
+
+.modal--close::before,
+.modal--close::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 7px;
+
+  display: block;
+  width: 2px;
+  height: 22px;
+
+  transform: rotate(45deg);
+  background-color: #323232;
+}
+
+.modal--close::after {
+  transform: rotate(-45deg);
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+
+  display: none;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+
+.modal__overlay--show {
+  display: block;
 }

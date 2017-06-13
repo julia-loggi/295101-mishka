@@ -20,8 +20,6 @@
 }
 
 .about__list {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -44,24 +42,25 @@
   }
 
   .about__list {
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
     font-size: @font-size-tertiary-m;
     line-height: @line-height-secondary-m;
   }
 
   .about__item {
-    width: 305px;
+    width: 50%;
   }
-
+  
   .about__item--price,
   .about__item--fabricator {
     order: 2;
   }
-
   .about__item--likes,
   .about__item--package {
     order: 3;
   }
+  
 }
 
 @media @desktop-width {

@@ -15,7 +15,7 @@
             <img src="http://placehold.it/100x45" width="100" height="45" alt="Магазин Мишка">
           </a>
         </div>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
 
           <div class="main-nav__wrapper">
@@ -46,7 +46,7 @@
           </p>
           <div class="order-form__content">
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="form__item">
+              <div class="form__item form__item--type">
                 <div class="field-radio">
                   <div class="field-radio__title">Тип</div>
                   <div class="field-radio__items">
@@ -62,7 +62,7 @@
                 </div>
               </div>
 
-              <div class="form__item">
+              <div class="form__item form__item--color">
                 <div class="field-checkbox">
                   <div class="field-checkbox__title">Цвет</div>
                   <div class="field-checkbox__items">
@@ -94,7 +94,7 @@
                 </div>
               </div>
 
-              <div class="form__item">
+              <div class="form__item form__item--name">
                 <div class="field-text">
                   <div class="field-text__title">ФИО</div>
                   <div class="field-text__items">
@@ -114,7 +114,7 @@
                 </div>
               </div>
 
-              <div class="form__item">
+              <div class="form__item form__item--tel">
                 <div class="field-text">
                   <div class="field-text__title">Тел</div>
                   <div class="field-text__items">
@@ -126,7 +126,7 @@
                 </div>
               </div>
 
-              <div class="form__item">
+              <div class="form__item form__item--email">
                 <div class="field-text">
                   <div class="field-text__title">e-mail</div>
                   <div class="field-text__items">
@@ -138,12 +138,12 @@
                 </div>
               </div>
 
-              <div class="form__item">
+              <div class="form__item form__item--extra">
                 <div class="field-text">
                   <div class="field-text__title">Доп</div>
                   <div class="field-text__items">
                     <label class="field-text__item">
-                      <textarea placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                      <textarea class="field-text__input placeholder="Опишите все ваши пожелания к заказу"></textarea>
                     </label>
                   </div>
                 </div>
@@ -176,21 +176,6 @@
         </p>
       </div>
     </footer>
-        <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

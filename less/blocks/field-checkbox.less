@@ -22,3 +22,34 @@
 .field-checkbox__input {
   display: none;
 }
+
+.field-checkbox__item  {
+  padding-left: 60px;
+}
+
+@media @tablet-width {
+  .field-checkbox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .field-checkbox__items {
+    width: 500px;
+  }
+  
+  .field-checkbox__items {
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+  }
+    
+  .field-checkbox__item {
+    padding: 15px 0 15px 80px;
+    flex-basis: 150px;
+  }
+}
+
+@media @desktop-width {
+  .field-checkbox__items {
+    width: 700px;
+  }
+}

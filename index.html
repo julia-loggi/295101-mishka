@@ -13,7 +13,7 @@
         <div class="page-header__logo">
           <img src="http://placehold.it/100x45" width="95" height="45" alt="Магазин Мишка">
         </div>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
 
           <div class="main-nav__wrapper">
@@ -93,7 +93,7 @@
       <section class="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
-          <a class="reviews__btn btn" href="#" title="Оставить отзыв">Написать</a>
+          
           <div class="reviews__slider-wrapper slider">
             <div class="reviews__list-wrapper slider__wrapper">
               <div class="reviews__list slider__inner">
@@ -107,6 +107,7 @@
           </div>
           <button class="btn btn--prev" type="button" title="Предыдущий отзыв">Предыдущий отзыв</button>
           <button class="btn btn--next" type="button" title="Следующий отзыв">Следующий отзыв</button>
+          <a class="reviews__btn btn" href="#" title="Оставить отзыв">Написать</a>
         </div>
       </section>
 
@@ -158,6 +159,9 @@
 
     <div class="modal">
       <div class="modal__wrapper">
+      <button class="modal--close" type="button" title="Закрыть">
+          Закрыть
+        </button>
         <h2 class="modal__title">Добавить в корзину</h2>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <div class="field-radio">
@@ -181,23 +185,9 @@
         </form>
       </div>
     </div>
+    <div class="modal__overlay"></div>
+    <script src="js/script.js"></script>
 
-      <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
 
   </body>
 </html>

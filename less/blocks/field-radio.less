@@ -20,3 +20,26 @@
 .field-radio__input {
   display: none;
 }
+
+.field-radio__item  {
+  padding-left: 60px;
+}
+
+@media @tablet-width {
+  .field-radio {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .field-radio__items {
+    width: 500px;
+  } 
+}
+
+
+@media @desktop-width {
+  .field-radio__items {
+    width: 700px;
+  }
+
+}

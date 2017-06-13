@@ -9,3 +9,25 @@
 .form__item {
   width: 100%;
 }
+
+@media @tablet-width {
+  .form__item {
+    padding: 50px;
+  }
+  
+  .form__item--color,
+  .form__item--tel,
+  .form__item--email {
+    background-color: @bg-color-secondary;
+  }
+  
+  .form__claim {
+    order: 2;
+  }
+}
+
+@media @desktop-width {
+  .form__item {
+    padding: 50px 150px;
+  }
+}
