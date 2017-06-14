@@ -1,5 +1,42 @@
 .catalog-video {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  color: @color-main;
   font-size: @font-size-secondary;
   line-height: @line-height-secondary;
-  color: @color-main;
+}
+
+.catalog-video__title {
+  margin: 0;
+  padding: 25px 40px 25px 90px;
+}
+
+.catalog-video__video {
+  position: relative;
+}
+
+.catalog-video__desc {
+  padding: 30px;
+  margin: 0;
+
+  line-height: @line-height-secondary;
+}
+
+.catalog-video__play-btn {
+  position: absolute;
+}
+
+@media @tablet-width {
+  .catalog-video__title {
+    padding-bottom: 0;
+    font-size: 20px;
+  }
+
+  .catalog-video__video {
+    order: -1;
+    width: 100%;
+    height: 455px;
+  }
 }

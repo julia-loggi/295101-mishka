@@ -1,5 +1,48 @@
 .field-text {
-  font-size: @font-size-tertiary;
   color: @color-secondary;
+
+  font-size: @font-size-tertiary;
   font-weight: 700;
+}
+
+.field-text__title {
+  color: #62d1ba;
+  text-transform: uppercase;
+}
+
+.field-text__items {
+}
+
+.field-text__item {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media @tablet-width {
+  .field-text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .field-text__items {
+    width: 500px;
+  }
+
+  .field-text__item {
+    flex-direction: row-reverse;
+  }
+
+  .field-text__text {
+    margin-right: 20px;
+  }
+
+  .field-text__input {
+    flex-grow: 1;
+  }
+}
+
+@media @desktop-width {
+  .field-text__items {
+    width: 700px;
+  }
 }

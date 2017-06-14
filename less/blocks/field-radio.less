@@ -1,5 +1,46 @@
 .field-radio {
-  font-size: @font-size-tertiary;
+  display: flex;
+  flex-wrap: wrap;
+
   color: @color-secondary;
+
+  font-size: @font-size-tertiary;
   font-weight: 700;
+}
+
+.field-radio__title {
+  color: #62d1ba;
+  text-transform: uppercase;
+}
+
+.field-radio__items {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-left: 60px;
+}
+
+.field-radio__input {
+  display: none;
+}
+
+.field-radio__item  {
+  padding-left: 60px;
+}
+
+@media @tablet-width {
+  .field-radio {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .field-radio__items {
+    width: 500px;
+  }
+}
+
+@media @desktop-width {
+  .field-radio__items {
+    width: 700px;
+  }
 }

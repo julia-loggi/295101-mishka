@@ -1,5 +1,30 @@
 .page-title {
-  font-size: @font-size-h2;
-  background-color: @bg-color-secondary;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 75px 0;
+
   color: @color-secondary;
+
+  font-size: @h2-font-size;
+  background-color: @bg-color-secondary;
+  text-align: center;
+}
+
+@media @tablet-width {
+  .page-title {
+    margin-bottom: 75px;
+    padding-top: 100px;
+    font-size: @h2-font-size-m;
+    line-height: @line-height-main-m;
+  }
+}
+
+@media @desktop-width {
+  .page-title {
+    padding-top: 100px 0;
+
+    font-size: @h2-font-size-l;
+    line-height: @line-height-main-l;
+  }
 }

@@ -1,6 +1,38 @@
 .catalog {
-  background-color: @bg-color-main;
   color: @color-main;
+
+  background-color: @bg-color-main;
+
   font-size: @font-size-secondary;
   line-height: @line-height-main;
+}
+
+.catalog__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.catalog__btn {
+  width: 100%;
+  margin: 0 30px;
+}
+
+@media @tablet-width {
+  .catalog__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    padding: 0 50px;
+  }
+}
+
+@media @desktop-width {
+  .catalog__wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1050px;
+    padding: 0 50px;
+  }
 }
