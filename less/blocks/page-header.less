@@ -1,7 +1,8 @@
 .page-header {
   position: relative;
-  background-color: @bg-color-main;
   min-height: 78px;
+  
+  background-color: @bg-color-main;
 }
 
 .page-header__wrapper {
@@ -16,7 +17,7 @@
   margin: 0 auto;
 }
 
-.page-header__logo img {
+.page-header__logo-img {
   width: 95px;
   height: 40px;
   margin-top: 20px;
@@ -24,11 +25,11 @@
 
 .page-header__text {
   display: none;
+  color: @color-main;
+  
   font-size: 15px;
   line-height: 24px;
-  color: @color-main;
 }
-
 
 @media @tablet-width {
   .page-header {
@@ -47,7 +48,7 @@
     margin: 0;
   }
 
-  .page-header__logo img {
+  .page-header__img {
     width: 118px;
     height: 50px;
   }

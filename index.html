@@ -11,7 +11,7 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
-          <img src="http://placehold.it/100x45" width="95" height="45" alt="Магазин Мишка">
+          <img class="page-header__logo-img" src="http://placehold.it/100x45" width="95" height="45" alt="Магазин Мишка">
         </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -30,7 +30,7 @@
             </ul>
           </div>
         </nav>
-        <span class="page-header__text">Бесплатная доставка по России</span>
+        
       </div>
     </header>
 
@@ -71,7 +71,7 @@
             </table>
             <img class="week-offer__img" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
             <span class="week-offer__price">Цена: 990руб.</span>
-            <a class="week-offer__btn btn" href="#" title="Заказать товар недели">Заказать</a>
+            <a class="week-offer__btn btn btn--offer" href="#" title="Заказать товар недели">Заказать</a>
           </div>
         </div>
       </section>
@@ -80,12 +80,12 @@
         <div class="about__wrapper">
           <h2 class="about__title">Коротко о нас:</h2>
           <ul class="about__list">
-            <li class="about__item about__item--ecology">Экологически<br> чистые материалы</li>
-            <li class="about__item about__item--price">Скандинавский стиль<br> по российской цене</li>
-            <li class="about__item about__item--likes">Увеличивает лайки<br> на фотографиях</li>
-            <li class="about__item about__item--handmade">Связано вручную с<br> любовью и умилением</li>
+            <li class="about__item about__item--ecology">Экологически чистые материалы</li>
+            <li class="about__item about__item--price">Скандинавский стиль по российской цене</li>
+            <li class="about__item about__item--likes">Увеличивает лайки на фотографиях</li>
+            <li class="about__item about__item--handmade">Связано вручную с любовью и умилением</li>
             <li class="about__item about__item--fabricator">Поддержка отечественного производителя</li>
-            <li class="about__item about__item--package">Поставляется в<br> подарочной упаковке</li>
+            <li class="about__item about__item--package">Поставляется в подарочной упаковке</li>
           </ul>
         </div>
       </section>
@@ -93,11 +93,12 @@
       <section class="reviews">
         <div class="reviews__wrapper">
           <h2 class="reviews__title">Отзывы</h2>
+          
           <div class="reviews__slider-wrapper slider">
             <div class="reviews__list-wrapper slider__wrapper">
               <div class="reviews__list slider__inner">
                 <blockquote class="reviews__item slider__item">
-                  <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессураов и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                  <p class="reviews__text slider__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессураов и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
                   <cite class="reviews__author-name">Анастасия Красильникова</cite>
                   <address class="reviews__author-link">@misssssiskras</address>
                 </blockquote>
@@ -156,11 +157,8 @@
       </div>
     </footer>
 
-    <div class="modal">
+    <div class="modal modal--close">
       <div class="modal__wrapper">
-      <button class="modal--close" type="button" title="Закрыть">
-          Закрыть
-        </button>
         <h2 class="modal__title">Добавить в корзину</h2>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <div class="field-radio">

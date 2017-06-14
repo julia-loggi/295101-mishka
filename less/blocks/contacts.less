@@ -1,5 +1,6 @@
 .contacts {
   color: @color-main;
+  
   font-size: @font-size-main;
   line-height: @line-height-main;
 }
@@ -19,14 +20,15 @@
 
 .contacts__title {
   margin: 0;
+  
   font-size: @font-size-tertiary;
   line-height: @line-height-main;
 }
 
 .contacts__btn-wrapper {
+  order: 2;
   width: 260px;
   padding: 0 30px;
-  order: 2;
 }
 
 .contacts__btn {
@@ -53,7 +55,7 @@
   }
   
   .contacts__title {
-    font-size: @font-size-h2-m;
+    font-size: @h2-font-size-m;
     line-height: @line-height-main-m;
   }
   
@@ -64,7 +66,6 @@
     width: 768px;
   }
 }
-
 
 @media @desktop-width {
   .contacts__wrapper {
@@ -80,7 +81,7 @@
   }
   
   .contacts__title {
-    font-size: @font-size-h2-l;
+    font-size: @h2-font-size-l;
     line-height: @line-height-main-l;
   }
   
@@ -89,6 +90,7 @@
     align-self: flex-start;
     padding-left: 175px;
   }
+  
   .contacts__map-wrapper {
     margin: 0;
     width: 50%;

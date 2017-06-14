@@ -3,25 +3,28 @@
   margin: 0 auto;
   margin-bottom: 30px;
   padding: 75px 0;
-  font-size: @font-size-h2;
-  background-color: @bg-color-secondary;
+  
   color: @color-secondary;
+  
+  font-size: @h2-font-size;
+  background-color: @bg-color-secondary;
   text-align: center;
 }
 
 @media @tablet-width {
   .page-title {
-    padding-top: 100px;
-    font-size: @font-size-h2-m;
-    line-height: @line-height-main-m;
     margin-bottom: 75px;
+    padding-top: 100px;
+    font-size: @h2-font-size-m;
+    line-height: @line-height-main-m;
   }
 }
 
-@media @desktop-width {
+@media @desktop-width) {
   .page-title {
     padding-top: 100px 0;
-    font-size: @font-size-h2-l;
+    
+    font-size: @h2-font-size-l;
     line-height: @line-height-main-l;
   }
 }

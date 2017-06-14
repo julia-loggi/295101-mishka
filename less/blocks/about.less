@@ -1,6 +1,8 @@
 .about {
   margin-top: 30px;
+  
   color: @color-main;
+  
   font-size: @font-size-tertiary;
   line-height: @line-height-tertiary;
   font-weight: 700;
@@ -13,15 +15,18 @@
 }
 
 .about__title {
-  font-size: @font-size-h2;
-  line-height: @line-height-main;
   margin: 0;
   margin-bottom: 25px;
+  
+  font-size: @h2-font-size;
+  line-height: @line-height-main;
+  
 }
 
 .about__list {
   margin: 0;
   padding: 0;
+  
   list-style: none;
 }
 
@@ -37,13 +42,15 @@
 
   .about__title {
     margin-bottom: 40px;
-    font-size: @font-size-h2-m;
+    
+    font-size: @h2-font-size-m;
     line-height: @line-height-main-m;
   }
 
   .about__list {
     display: flex;
     flex-wrap: wrap;
+    
     font-size: @font-size-tertiary-m;
     line-height: @line-height-secondary-m;
   }
@@ -51,7 +58,7 @@
   .about__item {
     width: 50%;
   }
-
+  
   .about__item--price,
   .about__item--fabricator {
     order: 2;
@@ -59,7 +66,7 @@
   .about__item--likes,
   .about__item--package {
     order: 3;
-  }
+  } 
 }
 
 @media @desktop-width {
@@ -73,7 +80,7 @@
   }
 
   .about__title {
-    font-size: @font-size-h2-l;
+    font-size: @h2-font-size-l;
     line-height: @line-height-main-l;
   }
 }

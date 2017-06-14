@@ -1,15 +1,25 @@
 .btn {
+  display: inline-block;
+  height: 52px;
+  vertical-align: top;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 15px 0;
+  
   color: @color-main;
   font-size: @font-size-tertiary;
   line-height: @line-height-secondary;
-  text-align: center;
+  font-weight: 700;
+  
   border: 2px solid black;
-  padding: 15px 0;
+ 
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 700;
-  line-height: 20px;
-  display: inline-block;
-  height: 52px;
-  box-sizing: border-box;
+}
+
+.btn--secondary {
+  color: white;
+  border: none;
+  background-color: #46c1ae;
+  cursor: pointer;
 }

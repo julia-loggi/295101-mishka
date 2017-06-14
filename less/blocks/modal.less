@@ -4,15 +4,11 @@
   z-index: 30;
   display: none;
   
-  font-size: @font-size-h2;
+  font-size: @h2-font-size;
   line-height: @line-height-main;
 }
 
-
 .modal__wrapper {
-  
-  
- 
   width: 320px;
   height: 400px;
   margin: 0 auto;
@@ -21,43 +17,6 @@
 
 .modal--show {
   display: block;
-}
-
-
-.modal--close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-
-
-  width: 16px;
-  height: 16px;
-
-  font-size: 0;
-
-  border: 0;
-  cursor: pointer;
-  background-color: #f8f7f4;
-  outline: none;
-}
-
-.modal--close::before,
-.modal--close::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 7px;
-
-  display: block;
-  width: 2px;
-  height: 22px;
-
-  transform: rotate(45deg);
-  background-color: #323232;
-}
-
-.modal--close::after {
-  transform: rotate(-45deg);
 }
 
 .modal__overlay {
@@ -72,7 +31,7 @@
   height: 100%;
 
   background: rgb(255, 255, 255);
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .modal__overlay--show {
