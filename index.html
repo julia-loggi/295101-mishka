@@ -11,7 +11,11 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
-          <img class="page-header__logo-img" src="http://placehold.it/100x45" width="95" height="45" alt="Магазин Мишка">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Магазин Мишка">
+          </picture>
         </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -69,7 +73,13 @@
               </tr>
             </table>
           </div>
-          <img class="week-offer__img" src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
+          <div class="week-offer__img">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
+          </div>
           <div class="week-offer__buy">
             <span class="week-offer__price">Цена: 990руб.</span>
             <a class="week-offer__btn btn btn--offer" href="#" title="Заказать товар недели">Заказать</a>
@@ -120,8 +130,8 @@
             <h2 class="contacts__title">Контакты</h2>
             <table class="contacts__table table">
               <tr class="table__row">
-                <td class="table__col table__col--1 contacts__table-link">e-mail:</td>
-                <td class="table__col table__col--2"><a href="#">info@mimimishkashop.ru</a></td>
+                <td class="table__col table__col--1">e-mail:</td>
+                <td class="table__col table__col--2"><a class="table__col--link" href="#">info@mimimishkashop.ru</a></td>
               </tr>
               <tr class="table__row">
                 <td class="table__col table__col--1">адрес:</td>
@@ -130,6 +140,11 @@
             </table>
           </div>
           <div class="contacts__map-wrapper">
+            <!-- <picture> -->
+              <!-- <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x"> -->
+              <!-- <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x"> -->
+              <!-- <img class="" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Вязаные корзинки"> -->
+            <!-- </picture> -->
             <iframe class="contacts__map" src="https://api-maps.yandex.ru/frame/v1/-/C6q3f6IE"></iframe>
           </div>
           <div class="contacts__btn-wrapper">
@@ -142,7 +157,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="http://placehold.it/100x45" width="100" height="45" alt="Магазин Мишка">
+          <img src="img/logo-footer.svg" alt="Магазин Мишка">
         </div>
         <section class="page-footer__social">
           <div class="social-links">
@@ -154,7 +169,7 @@
         <p class="page-footer__copyright">
           <span class="page-footer__copyright-text">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" title="Переход на старницу HTML Academy">
-            <img src="http://placehold.it/27x34" width="29" height="35" alt="htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" alt="htmlacademy.ru">
           </a>
         </p>
       </div>

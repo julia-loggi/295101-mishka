@@ -35,8 +35,20 @@
 }
 
 .field-checkbox__item  {
+  position: relative;
+  padding: 10px;
   padding-left: 60px;
-  padding: 10px 60px;
+  cursor: pointer;
+}
+
+.field-checkbox__item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px solid grey;
 }
 
 @media @tablet-width {

@@ -56,8 +56,6 @@
 
 @media @tablet-width {
   .reviews {
-    padding-top: 85px;
-
     margin-bottom: 70px;
   }
 
@@ -68,6 +66,9 @@
     flex-wrap: wrap;
     width: 768px;
     padding: 0 50px;
+    padding-top: 75px;
+    background-image: url('../img/review@1x.jpg');
+    background-repeat: no-repeat;
   }
 
   .reviews__btn {
@@ -97,6 +98,12 @@
   .reviews__text {
     font-size: @font-size-main-m;
   }
+
+  @media @retina{
+    .reviews_wrapper {
+      background-image: url('../img/review@2x.jpg');
+      background-size: 350px auto;
+    }
 }
 
 @media @desktop-width {

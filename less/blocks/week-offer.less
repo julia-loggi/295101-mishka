@@ -24,7 +24,7 @@
 }
 
 .week-offer__subtitle {
-  color: #63d1bb;
+  color: @color-green;
 
   font-weight: 700;
   font-size: @font-size-tertiary;
@@ -37,12 +37,15 @@
   margin-bottom: 15px;
 }
 
-.week-offer__table {
+.week-offer__info {
   margin-bottom: 30px;
 }
 
 .week-offer__img {
-  margin-bottom: 15px;
+  height: 315px;
+  margin-bottom: 25px;
+  
+  overflow: hidden;
 }
 
 .week-offer__price {
@@ -109,8 +112,8 @@
   .week-offer__img {
     margin-bottom: 0;
     float: right;
-    width: 334px;
-    height: 405px;
+    width: 333px;
+    height: auto;
   }
 
   .week-offer__price {
@@ -159,10 +162,9 @@
   }
 
   .week-offer__img {
-    width: 530px;
-    height: 640px;
+    width: 525px;
 
-    margin-top: -165px;
+    margin-top: -154px;
   }
 
   .week-offer__desc {

@@ -12,7 +12,11 @@
       <div class="page-header__wrapper">
         <div class="page-header__logo">
           <a class="page-header__logo-link" href="index.html" title="Главная страница">
-            <img class="page-header__logo-img" src="http://placehold.it/100x45" width="100" height="45" alt="Магазин Мишка">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Магазин Мишка">
+            </picture>
           </a>
         </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -32,7 +36,7 @@
             </ul>
           </div>
         </nav>
-        <span class="page-header__text">Бесплатная доставка по России</span>
+        <!-- <span class="page-header__text">Бесплатная доставка по России</span> -->
       </div>
     </header>
 
@@ -51,11 +55,11 @@
                   <div class="field-radio__title">Тип</div>
                   <div class="field-radio__items">
                     <label class="field-radio__item">
-                      <input class="field-radio__input" type="radio" name="size" value="s" checked>
+                      <input class="field-radio__input" type="radio" name="type" value="interior" checked>
                       <span class="field-radio__text">Аксессуар для интерьера</span>
                     </label>
                     <label class="field-radio__item">
-                      <input class="field-radio__input" type="radio" name="size" value="m" checked>
+                      <input class="field-radio__input" type="radio" name="type" value="toy">
                       <span class="field-radio__text">Детская игрушка</span>
                     </label>
                   </div>
@@ -119,8 +123,8 @@
                   <div class="field-text__title">Тел</div>
                   <div class="field-text__items">
                     <label class="field-text__item">
+                      <!-- <span class="field-text__text"></span> -->
                       <input class="field-text__input" type="tel" name="tel" autocomplete="on" id="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
-                      <span class="field-text__text"></span>
                     </label>
                   </div>
                 </div>
@@ -131,8 +135,8 @@
                   <div class="field-text__title">e-mail</div>
                   <div class="field-text__items">
                     <label class="field-text__item">
+                      <!-- <span class="field-text__text"></span> -->
                       <input class="field-text__input" type="email" name="email" autocomplete="on" id="email" placeholder="Ваш e-mail*" required>
-                      <span class="field-text__text"></span>
                     </label>
                   </div>
                 </div>
@@ -160,7 +164,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html" title="Главная страница">
-            <img src="http://placehold.it/100x45" width="100" height="45" alt="Магазин Мишка">
+            <img src="img/logo-footer.svg" alt="Магазин Мишка">
           </a>
         </div>
         <section class="page-footer__social">
@@ -173,7 +177,7 @@
         <p class="page-footer__copyright">
           <span class="page-footer__copyright-text">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" title="Переход на старницу HTML Academy">
-            <img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" alt="htmlacademy.ru">
           </a>
         </p>
       </div>

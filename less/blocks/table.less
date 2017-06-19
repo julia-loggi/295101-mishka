@@ -18,6 +18,22 @@
   padding: 10px 0;
 }
 
+.table__col--link {
+  position: relative;
+  color: #444444;
+  text-decoration: none;
+}
+
+.table__col--link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px;
+  width: 100%;
+  background-color: green;
+}
+
 .table__col--1 {
   min-width: 48px;
 }
