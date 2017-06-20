@@ -32,3 +32,18 @@ gulp.task("serve", ["style"], function() {
   gulp.watch("less/**/*.less", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
 });
+
+
+var gulp = require("gulp");
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
+gulp.task("symbols", function() {
+  return gulp.src("img/*.svg")
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("symbols.svg"))
+    .pipe(gulp.dest("img"));
+});

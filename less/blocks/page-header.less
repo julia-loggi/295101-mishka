@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  min-height: 78px;
+  min-height: 79px;
 
   background-color: @bg-color-main;
 }
@@ -10,25 +10,6 @@
   margin: 0 auto;
 
   border-bottom: 1px solid @color-main;
-}
-
-.page-header__logo {
-  width: 88px;
-  height: 78px;
-  margin: 0 auto;
-}
-
-.page-header__logo-img {
-  height: 37px;
-  margin-top: 20px;
-}
-
-.page-header__text {
-  display: none;
-  color: @color-main;
-
-  font-size: @font-size-main;
-  line-height: @line-height-secondary;
 }
 
 @media @tablet-width {
@@ -41,29 +22,11 @@
     height: 89px;
     padding: 0 50px;
   }
-
-  .page-header__logo {
-    position: absolute;
-    z-index: 4;
-    width: 115px;
-    height: 88px;
-    margin: 0;
-  }
-
-  .page-header__logo-img {
-    height: 100%;
-    margin: 0;
-  }
 }
 
 @media @desktop-width {
   .page-header__wrapper {
     width: 1150px;
     padding: 0 50px;
-  }
-
-  .page-header__logo {
-    left: 45%;
-    width: 150px;
   }
 }

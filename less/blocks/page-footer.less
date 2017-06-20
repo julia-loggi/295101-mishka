@@ -15,6 +15,14 @@
   display: none;
 }
 
+.page-footer__logo-link:hover {
+  fill: @btn-color-hover-secondary;
+}
+
+.page-footer__logo-link:active {
+  opacity: 0.3;
+}
+
 .page-footer__social {
   padding-bottom: 25px;
   border-bottom: 1px solid red;
@@ -25,8 +33,21 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 0;
+  margin: 0 23px;
   padding-top: 25px;
+}
+
+.page-footer__copyright-link {
+  fill: @color-green;
+
+  &:hover {
+    fill: @btn-color-hover-secondary
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
 }
 
 @media @tablet-width {
