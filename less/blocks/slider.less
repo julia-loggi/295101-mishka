@@ -4,3 +4,55 @@
 .slider__text {
   margin: 0;
 }
+
+.slider__btn-wrapper {
+  position: relative;
+  margin-bottom: 40px;
+  word-spacing: -5px;
+}
+
+.slider__btn {
+  position: relative;
+  width: 50%;
+  cursor: pointer;
+}
+
+.slider__btn,
+.slider__btn:hover,
+.slider__btn:active {
+  background-color: transparent;
+}
+
+.slider__btn-icon {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 39px;
+
+  &:hover {
+  fill: #444444;
+  }
+
+  &:active {
+  opacity: 0.3;
+  }
+}
+
+@media @tablet-width {
+  .slider__btn-wrapper {
+    position: absolute;
+    bottom: 52px;
+    right: 50px;
+    
+    width: 175px;
+    margin-bottom: 0;
+  }
+  
+  .slider__btn {
+    border: none;
+  }
+  
+  .slider__btn-icon {
+    left: 20px;
+  }
+}

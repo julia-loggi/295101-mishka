@@ -39,9 +39,11 @@
 .field-radio__text {
   font-size: @font-size-tertiary;
   line-height: @line-height-quaternary;
+  cursor: pointer;
 }
 
 .field-radio__item {
+  position: relative;
   margin-bottom: 15px;
   padding-left: 60px;
 }
@@ -56,6 +58,23 @@
   cursor: pointer;
   border: 2px solid red;
   border-radius: 50%;
+}
+
+.field-radio__text::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  display: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #62d1ba;
+}
+
+.field-radio__input:checked ~ .field-radio__text::after {
+  display: block;
 }
 
 @media @tablet-width {

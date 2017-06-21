@@ -16,12 +16,21 @@
   line-height: @line-height-secondary;
 }
 
+.catalog-video__icon {
+  content: '';
+  position: absolute;
+  top: -220px;
+  left: 0;
+  fill: #46c1ae;
+}
+
 .catalog-video__video {
   position: relative;
   height: 150px;
 }
 
 .catalog-video__desc {
+  position: relative;
   padding: 30px;
 }
 
@@ -53,6 +62,11 @@
     font-size: @font-size-tertiary-m;
   }
 
+  .catalog-video__icon {
+    top: -31px;
+    left: 35px;
+  }
+
   .catalog-video__video {
     order: -1;
     width: 100%;
@@ -79,14 +93,19 @@
     left: 0;
 
     width: 685px;
-}
+  }
 
-.catalog-video__title,
-.catalog-video__desc {
+  .catalog-video__title,
+  .catalog-video__desc {
     width: 365px;
     margin-top: auto;
     padding-left: 80px;
-}
+  }
+
+  .catalog-video__icon {
+    top: -135px;
+    left: 80px;
+  }
 
   .catalog-video__text {
     font-size: 15px;

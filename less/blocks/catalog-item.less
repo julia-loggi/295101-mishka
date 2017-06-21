@@ -7,7 +7,6 @@
   padding: 25px;
 }
 
-
 .catalog-item__title {
   margin: 0;
 
@@ -20,6 +19,15 @@
   color: #000000;
 
   text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+  opacity: 0.6;
+  }
+
+  &:active {
+  opacity: 0.3;
+  }
 }
 
 .catalog-item__desc {
@@ -28,15 +36,33 @@
   font-size: @font-size-secondary;
   line-height: @line-height-main;
 }
+
 .catalog-item__buy {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
   padding-top: 25px;
 
   border-top: 1px solid red;
 }
+
 .catalog-item__price {
   font-size: @font-size-main;
   line-height: @line-height-secondary;
   font-weight: 700;
+}
+
+.catalog-item__icon {
+  fill: #444444;
+  cursor: pointer;
+
+  &:hover {
+  fill: #a8e5d9;
+  }
+
+  &:active {
+  opacity: 0.3;
+  }
 }
 
 @media @tablet-width {
