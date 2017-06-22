@@ -14,6 +14,7 @@ var svgmin = require("gulp-svgmin");
 var imagemin = require("gulp-imagemin");
 var run = require("run-sequence");
 var del = require("del");
+var jsmin = require('gulp-jsmin');
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
@@ -27,10 +28,19 @@ gulp.task("style", function() {
         sort: true
       })
     ]))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
+});
+
+
+gulp.task("jsmin", function () {
+    gulp.src("js/*.js")
+      .pipe(gulp.dest("js"))
+      .pipe(jsmin())
+      .pipe(rename({suffix: ".min"}))
+      .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("symbols", function() {
@@ -78,7 +88,6 @@ gulp.task("copy", function() {
   return gulp.src([
       "fonts/**/*.{woff,woff2}",
       "img/**",
-      "js/**",
       "*.html"
     ], {
       base: "."
@@ -97,6 +106,7 @@ gulp.task("build", function(fn) {
     "style",
     "images",
     "symbols",
+    "jsmin",
     fn
   );
 });
