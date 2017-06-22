@@ -5,6 +5,7 @@
     <meta name="description" content="Милые штуки ручной работы для дома">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.js"></script>
     <title>Каталог: Мишка</title>
   </head>
   <body>
@@ -142,7 +143,7 @@
               </picture>
             </a>
             <div class="catalog-item__info">
-              <h2 class="catalog-item__title"><a class="catalog-item__link" href="#">Большая корзинка для игрушек</a></h2>
+              <h2 class="catalog-item__title"><a class="catalog-item__link" href="#">Большая корзинка <br>для игрушек</a></h2>
               <span class="catalog-item__desc">Диаметр 30см, высота 30см</span>
               <div class="catalog-item__buy">
                 <span class="catalog-item__price">1 500 руб.</span>
@@ -154,19 +155,25 @@
           </article>
 
           <div class="catalog-video">
+            <svg class="catalog-video__icon" width="35" height="35">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video"></use>
+            </svg>
             <h2 class="catalog-video__title">Процесс производства</h2>
             <div class="catalog-video__video">
+              <button class="catalog-video__play-btn">
+                <svg class="catalog-video__play-btn-icon" width="102" height="97">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use>
+                </svg>
+              </button>
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
                 <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x">
               </picture>
             </div>
-            <button class="catalog-video__play-btn">Play</button>
+
             <div class="catalog-video__desc">
-              <svg class="catalog-video__icon" width="35" height="35">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video"></use>
-              </svg>
+
               <p class="catalog-video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
               </p>
               <a class="catalog__btn btn" href="#" title="Сделать заказ">Сделать заказ</a>
@@ -179,11 +186,9 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <a class="page-footer__logo-link" href="index.html" title="Главная страница">
-            <svg width="102" height="34">
+          <svg width="102" height="34">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
           </svg>
-          </a>
         </div>
         <section class="page-footer__social">
           <div class="social-links">
@@ -205,8 +210,8 @@
           </div>
         </section>
         <p class="page-footer__copyright">
-          <span class="page-footer__copyright-text">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" title="Переход на старницу HTML Academy">
+            <span class="page-footer__copyright-text">Разработано</span>
             <svg width="27" height="34">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
             </svg>

@@ -1,8 +1,6 @@
 .field-text {
-  margin-bottom: 25px;
-
   color: @color-secondary;
-
+  line-height: 18px;
   font-size: @font-size-tertiary;
   font-weight: 700;
 }
@@ -18,19 +16,28 @@
 .field-text__title::before {
   position: absolute;
   left: 60px;
-  top: 15px;
+  top: 7px;
   content: "";
-  border: 1px solid red;
+  border: 1px solid #62d1ba;
   width: 198px;
 }
 
 .field-text__item {
+  position: relative;
   display: flex;
   flex-direction: column-reverse;
+  margin-top: 20px;
+}
+
+.field-text__icon {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 15px;
+  fill: rgba(68, 68, 68, 0.3);
 }
 
 .field-text__input {
-  margin-bottom: 15px;
   padding: 15px;
   padding-left: 0;
 
@@ -40,7 +47,7 @@
 
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid green;
+  border-bottom: 1px solid #000000;
   outline: none;
 }
 
@@ -50,7 +57,7 @@
   margin-bottom: 0;
   padding: 15px;
 
-  border: 1px solid green;
+  border: 1px solid #000000;
 }
 
 @media @tablet-width {
@@ -66,6 +73,10 @@
   .field-text__item {
     flex-direction: row-reverse;
     align-items: baseline;
+
+    &:hover .field-text__icon {
+      fill: #62d1ba;
+    }
   }
 
   .field-text__text {
@@ -80,6 +91,12 @@
 
     font-size: @font-size-quaternary;
     line-height: @line-height-quaternary;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      border-color: #62d1ba;
+    }
   }
 
   .field-text__title {

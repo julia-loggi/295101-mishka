@@ -1,6 +1,6 @@
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
-var link = document.querySelector(".add-to-basket__call");
+var link = document.querySelectorAll(".add-to-basket__call");
 var popup = document.querySelector(".add-to-basket");
 var overlay = document.querySelector(".add-to-basket__overlay");
 
@@ -18,11 +18,13 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-link.addEventListener("click", function(event)  {
-  event.preventDefault();
-  popup.classList.add("add-to-basket--show");
-  overlay.classList.add("add-to-basket__overlay--show");
-});
+for (var i=0; i < link.length; i++) {
+  link[i].addEventListener("click", function(event)  {
+    event.preventDefault();
+    popup.classList.add("add-to-basket--show");
+    overlay.classList.add("add-to-basket__overlay--show");
+  });
+}
 
 window.addEventListener("keydown", function(event) {
   if (event.keyCode === 27) {
@@ -30,5 +32,3 @@ window.addEventListener("keydown", function(event) {
     overlay.classList.remove("add-to-basket__overlay--show");
   }
 });
-
-

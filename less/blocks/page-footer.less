@@ -25,29 +25,35 @@
 
 .page-footer__social {
   padding-bottom: 25px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.3);
   font-size: 0;
 }
 
 .page-footer__copyright {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   margin: 0 23px;
   padding-top: 25px;
 }
 
 .page-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
   fill: @color-green;
 
   &:hover {
     fill: @btn-color-hover-secondary
   }
 
-  &:active {
+  &:active,
+  &:active .page-footer__copyright-text {
     opacity: 0.3;
   }
 
+}
+
+.page-footer__copyright-text {
+  color: #000000;
 }
 
 @media @tablet-width {
@@ -57,7 +63,7 @@
     align-items: center;
     width: 768px;
     height: auto;
-    padding: 50px 0;
+    padding: 50px;
   }
 
   .page-footer__logo {
@@ -71,6 +77,7 @@
     align-self: center;
     justify-content: space-between;
     width: 185px;
+    margin: 0;
     padding: 0;
   }
 

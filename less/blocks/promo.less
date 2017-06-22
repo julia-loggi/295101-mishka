@@ -4,7 +4,7 @@
   font-size: @font-size-quaternary;
   line-height: @line-height-main;
 
-  background-color: rgba(249,249,249,1);
+  background-color: rgba(249, 249, 249,1);
   background-image: url('../img/hero-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: center 0;
@@ -41,6 +41,7 @@
 }
 
 .promo__item {
+  position: relative;
   height: 103px;
   background-color: @btn-color-secondary;
 
@@ -55,6 +56,23 @@
   &--right:hover {
   background-color: @btn-color-hover-secondary;
   }
+}
+
+.promo__item-icon {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 26px;
+  fill: rgba(59, 176, 165, 1);
+  cursor: pointer;
+}
+
+.promo__item:hover .promo__item-icon {
+  opacity: 0.7;
+}
+
+.promo__item:active .promo__item-icon {
+  opacity: 0.3;
 }
 
 .promo__link {

@@ -5,6 +5,7 @@
     <meta name="description" content="Милые штуки ручной работы для дома">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.js"></script>
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
@@ -91,7 +92,7 @@
           <ul class="promo__list">
             <li class="promo__item promo__item--left">
               <a class="promo__link" href="#">Предметы<br>интерьера</a>
-              <svg class="promo__item-icon" width="42" height="65">
+              <svg class="promo__item-icon" width="65" height="65">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-interior"></use>
               </svg>
             </li>
@@ -195,20 +196,21 @@
                   <address class="reviews__author-link">@misssssiskras</address>
                 </blockquote>
               </div>
+              <div class="slider__btn-wrapper">
+                <button class="slider__btn btn" type="button" title="Предыдущий отзыв">
+                  <svg class="slider__btn-icon slider__btn-icon--left-arrow" width="52" height="27">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-left-arrow"></use>
+                  </svg>
+                </button>
+                <button class="slider__btn btn" type="button" title="Следующий отзыв">
+                  <svg class="slider__btn-icon slider__btn-icon--right-arrow" width="52" height="27">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right-arrow"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="slider__btn-wrapper">
-            <button class="slider__btn btn" type="button" title="Предыдущий отзыв">
-              <svg class="slider__btn-icon slider__btn-icon--left-arrow" width="52" height="27">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-left-arrow"></use>
-              </svg>
-            </button>
-            <button class="slider__btn btn" type="button" title="Следующий отзыв">
-              <svg class="slider__btn-icon slider__btn-icon--right-arrow" width="52" height="27">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right-arrow"></use>
-              </svg>
-            </button>
-          </div>
+
           <a class="reviews__btn btn" href="#" title="Оставить отзыв">Написать</a>
         </div>
       </section>
@@ -270,8 +272,8 @@
           </div>
         </section>
         <p class="page-footer__copyright">
-          <span class="page-footer__copyright-text">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" title="Переход на старницу HTML Academy">
+            <span class="page-footer__copyright-text">Разработано</span>
             <svg width="27" height="34">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use>
             </svg>

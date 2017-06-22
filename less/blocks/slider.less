@@ -1,8 +1,10 @@
-.slider {
+.slider__wrapper {
+  position: relative;
 }
 
 .slider__text {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .slider__btn-wrapper {
@@ -14,6 +16,9 @@
 .slider__btn {
   position: relative;
   width: 50%;
+  border-color: rgba(68, 68, 68, 0.3);
+  border-width: 1px;
+  outline: none;
   cursor: pointer;
 }
 
@@ -28,31 +33,36 @@
   position: absolute;
   top: 11px;
   left: 39px;
+}
 
-  &:hover {
+.slider__btn:hover .slider__btn-icon {
   fill: #444444;
-  }
-
-  &:active {
+}
+.slider__btn:active .slider__btn-icon {
   opacity: 0.3;
-  }
 }
 
 @media @tablet-width {
   .slider__btn-wrapper {
     position: absolute;
-    bottom: 52px;
-    right: 50px;
-    
+    bottom: 0;
+    right: 0;
+
     width: 175px;
     margin-bottom: 0;
   }
-  
+
   .slider__btn {
     border: none;
   }
-  
+
   .slider__btn-icon {
     left: 20px;
+  }
+}
+
+@media @desktop-width {
+  .slider__btn-wrapper {
+    right: -45px
   }
 }

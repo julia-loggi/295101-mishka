@@ -7,7 +7,7 @@
 
   font-size: @h2-font-size;
   line-height: @line-height-main;
-  
+
   border: 1px solid #c7c7c7;
   transform: translateX(-50%);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
@@ -21,21 +21,25 @@
 .add-to-basket__wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
   width: 320px;
   height: 306px;
   padding: 30px;
 }
 
 .add-to-basket__title {
+  width: 162px;
   margin: 0;
   text-transform: uppercase;
-  font-size: 29px;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .add-to-basket__form  {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   flex-grow: 1;
 }
 
@@ -44,13 +48,15 @@
 }
 
 .add-to-basket__field-radio-title {
+  margin-bottom: 20px;
   text-align: center;
+  font-size: 15px;
 }
 
 .add-to-basket__field-radio-items {
   display: flex;
-  
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .add-to-basket__field-radio-input {
@@ -69,8 +75,13 @@
   font-size: 17px;
   line-height: 18px;
   text-align: center;
-  border: 2px solid #ececec;
+  border: 2px solid rgba(68, 68, 68, 0.1);
   cursor: pointer;
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .add-to-basket__btn {
@@ -97,9 +108,19 @@
   .add-to-basket__wrapper {
     width: 566px;
     height: 336px;
-    padding: 46px 108px;
+    padding: 46px 106px;
   }
-  
+
+  .add-to-basket__title {
+    width: 100%;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .add-to-basket__field-radio-title {
+    font-size: 17px;
+  }
+
   .add-to-basket__field-radio-text {
     width: 108px;
   }
