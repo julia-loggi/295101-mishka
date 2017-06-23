@@ -30,16 +30,13 @@ gulp.task("style", function() {
     ]))
     .pipe(gulp.dest("css"))
     .pipe(minify())
-    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"));
 });
-
 
 gulp.task("jsmin", function () {
     gulp.src("js/*.js")
       .pipe(gulp.dest("js"))
       .pipe(jsmin())
-      .pipe(rename({suffix: ".min"}))
       .pipe(gulp.dest("build/js"));
 });
 
@@ -71,9 +68,9 @@ gulp.task("html:update", ["html:copy"], function(done) {
   done();
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", ["build"], function() {
   server.init({
-    server: "/build",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,

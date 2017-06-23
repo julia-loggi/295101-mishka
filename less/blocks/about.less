@@ -1,5 +1,5 @@
 .about {
-  margin: 35px 0 60px;
+  margin-bottom: 60px;
 
   color: @color-main;
 
@@ -16,7 +16,7 @@
 
 .about__title {
   margin: 0;
-
+  margin-bottom: 45px;
   font-size: @h2-font-size;
   line-height: @line-height-main;
 
@@ -31,20 +31,21 @@
 
 .about__item {
   position: relative;
+  margin-bottom: 27px;
   padding-top: 85px;
 }
 
 .about__item-icon {
   content: '';
   position: absolute;
-  top: 26px;
+  top: 2px;
   left: 0;
   fill: #62d1ba;
 }
 
 @media @tablet-width {
   .about {
-    margin: 55px 0 80px;
+    margin-bottom: 34px;
   }
 
   .about__wrapper {
@@ -53,8 +54,6 @@
   }
 
   .about__title {
-    margin-bottom: 40px;
-
     font-size: @h2-font-size-m;
     line-height: @line-height-main-m;
   }
@@ -69,6 +68,7 @@
 
   .about__item {
     width: 50%;
+    margin-bottom: 55px;
   }
 
   .about__item--price,
@@ -83,7 +83,7 @@
 
 @media @desktop-width {
   .about {
-    margin: 70px 0 90px;
+    margin-bottom: 40px;
   }
 
   .about__wrapper {
@@ -96,7 +96,13 @@
   }
 
   .about__title {
+    margin-bottom: 44px;
     font-size: @h2-font-size-l;
     line-height: @line-height-main-l;
+  }
+
+  .about__item {
+    margin-bottom: 55px;
+    padding-top: 56px;
   }
 }

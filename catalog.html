@@ -107,7 +107,7 @@
               <span class="catalog-item__desc">Рост 30см, вес 200г</span>
               <div class="catalog-item__buy">
                 <span class="catalog-item__price">1 200 руб.</span>
-                <svg class="catalog-item__icon add-to-basket__call" width="20" height="20">
+                <svg class="catalog-item__icon popup__call" width="20" height="20">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                 </svg>
               </div>
@@ -127,7 +127,7 @@
               <span class="catalog-item__desc">Диаметр 15см, высота 10см</span>
               <div class="catalog-item__buy">
                 <span class="catalog-item__price">690 руб.</span>
-                <svg class="catalog-item__icon add-to-basket__call" width="20" height="20">
+                <svg class="catalog-item__icon popup__call" width="20" height="20">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                 </svg>
               </div>
@@ -147,7 +147,7 @@
               <span class="catalog-item__desc">Диаметр 30см, высота 30см</span>
               <div class="catalog-item__buy">
                 <span class="catalog-item__price">1 500 руб.</span>
-                <svg class="catalog-item__icon add-to-basket__call" width="20" height="20">
+                <svg class="catalog-item__icon popup__call" width="20" height="20">
                   <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
                 </svg>
               </div>
@@ -186,9 +186,11 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <svg width="102" height="34">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
-          </svg>
+          <div class="page-footer__logo-link">
+            <svg width="102" height="34">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
+            </svg>
+          </div>
         </div>
         <section class="page-footer__social">
           <div class="social-links">
@@ -220,32 +222,32 @@
       </div>
     </footer>
 
-    <div class="add-to-basket">
-      <div class="add-to-basket__wrapper">
-        <h2 class="add-to-basket__title">Добавить в корзину</h2>
-        <form class="add-to-basket__form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="add-to-basket__field-radio">
-            <div class="add-to-basket__field-radio-title">Выберите размер:</div>
-            <div class="add-to-basket__field-radio-items">
-              <label class="add-to-basket__field-radio-item">
-                  <input class="add-to-basket__field-radio-input" type="radio" name="size" value="s" checked>
-                  <span class="add-to-basket__field-radio-text">s</span>
+    <div class="popup">
+      <div class="popup__wrapper">
+        <h2 class="popup__title">Добавить в корзину</h2>
+        <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="popup__field-radio">
+            <div class="popup__field-radio-title">Выберите размер:</div>
+            <div class="popup__field-radio-items">
+              <label class="popup__field-radio-item">
+                  <input class="popup__field-radio-input" type="radio" name="size" value="s" checked>
+                  <span class="popup__field-radio-text">s</span>
               </label>
-              <label class="add-to-basket__field-radio-item">
-                  <input class="add-to-basket__field-radio-input" type="radio" name="size" value="m">
-                  <span class="add-to-basket__field-radio-text">m</span>
+              <label class="popup__field-radio-item">
+                  <input class="popup__field-radio-input" type="radio" name="size" value="m">
+                  <span class="popup__field-radio-text">m</span>
               </label>
-              <label class="add-to-basket__field-radio-item">
-                  <input class="add-to-basket__field-radio-input" type="radio" name="size" value="l">
-                  <span class="add-to-basket__field-radio-text">l</span>
+              <label class="popup__field-radio-item">
+                  <input class="popup__field-radio-input" type="radio" name="size" value="l">
+                  <span class="popup__field-radio-text">l</span>
               </label>
             </div>
           </div>
-          <input type="submit" class="add-to-basket__btn btn btn--secondary" value="Добавить">
+          <input type="submit" class="popup__btn btn btn--secondary" value="Добавить">
         </form>
       </div>
     </div>
-    <div class="add-to-basket__overlay"></div>
+    <div class="popup__overlay"></div>
     <script src="js/script.js"></script>
   </body>
 </html>

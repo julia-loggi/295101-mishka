@@ -6,6 +6,8 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "6.7.x",
+    "css-mqpacker": "6.0.1",
+    "del": "3.0.0",
     "browser-sync": "2.18.12",
     "gulp": "3.9.1",
     "gulp-csso": "^3.0.0",
@@ -34,8 +36,5 @@
   ],
   "engines": {
     "node": "6.10"
-  },
-  "dependencies": {
-    "del": "^3.0.0"
   }
 }
