@@ -1,21 +1,32 @@
+.order-form {
+  margin-bottom: 55px;
+}
+
 .order-form__wrapper {
-  width: 260px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
 .order-form__desc {
   margin: 0;
+  margin-bottom: 25px;
+  font-size: @font-size-secondary;
+  line-height: @line-height-secondary;
 }
 
 @media @tablet-width {
   .order-form__wrapper {
     width: 768px;
+    padding: 0;
   }
 
   .order-form__desc {
     margin-bottom: 60px;
     padding: 0 50px;
+
+    font-size: @font-size-tertiary;
+    line-height: @line-height-main;
   }
 }
 

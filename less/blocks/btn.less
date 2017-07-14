@@ -3,18 +3,27 @@
   height: 52px;
   vertical-align: top;
   text-align: center;
-  box-sizing: border-box;
-  padding: 15px 0;
+  padding: 12px 0;
 
   color: @color-main;
   font-size: @font-size-tertiary;
   line-height: @line-height-secondary;
   font-weight: 700;
 
-  border: 2px solid black;
+  border: 2px solid #444444;
 
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+  color: #ffffff;
+  background-color: #444444;
+  }
+
+  &:active {
+  color: rgba(133, 133, 133, 0.3);
+  background-color: #444444;
+  }
 }
 
 .btn--secondary {
@@ -22,4 +31,12 @@
   border: none;
   background-color: #46c1ae;
   cursor: pointer;
+
+  &:hover {
+    background-color: #56c3b2;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

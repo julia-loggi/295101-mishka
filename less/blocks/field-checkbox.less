@@ -1,7 +1,5 @@
 .field-checkbox {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  margin-bottom: 25px;
 
   color: @color-secondary;
 
@@ -10,16 +8,26 @@
 }
 
 .field-checkbox__title {
+  position: relative;
+  margin-bottom: 20px;
+
   color: #62d1ba;
 
   text-transform: uppercase;
 }
 
+.field-checkbox__title::before {
+  position: absolute;
+  left: 60px;
+  top: 15px;
+  content: '';
+  border: 1px solid #62d1ba;
+  width: 198px;
+}
+
 .field-checkbox__items {
   display: flex;
   flex-direction: column;
-
-  padding-left: 60px;
 }
 
 .field-checkbox__input {
@@ -27,32 +35,88 @@
 }
 
 .field-checkbox__item  {
+  position: relative;
+  height: 38px;
+  margin-bottom: 22px;
+}
+
+.field-checkbox__text::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #444444;
+}
+
+.field-checkbox__text {
+  cursor: pointer;
   padding-left: 60px;
+
+  &:hover::before {
+    border-color: #62d1ba;
+  }
+
+  &:active::before {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.field-checkbox__indicator {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  display: none;
+  fill: #444444;
+}
+
+.field-checkbox__input:checked ~ .field-checkbox__indicator {
+  display: block;
 }
 
 @media @tablet-width {
   .field-checkbox {
     display: flex;
-    justify-content: space-between;
-  }
-
-  .field-checkbox__items {
-    width: 500px;
+    align-items: baseline;
+    margin-bottom: 0;
   }
 
   .field-checkbox__items {
     flex-wrap: wrap;
     flex-direction: row;
+    width: 500px;
   }
 
   .field-checkbox__item {
-    flex-basis: 150px;
-    padding: 15px 0 15px 80px;
+    flex-basis: 50%;
+  }
+
+  .field-checkbox__title {
+    width: 165px;
+  }
+
+  .field-checkbox__title::before {
+    display: none;
+  }
+
+  .field-checkbox__text {
+    padding-left: 80px;
+    font-size: @font-size-quaternary;
   }
 }
 
 @media @desktop-width {
   .field-checkbox__items {
     width: 700px;
+  }
+
+  .field-checkbox__title {
+    width: 115px;
+  }
+
+  .field-checkbox__item {
+    flex-basis: 33%;
   }
 }

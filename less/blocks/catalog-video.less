@@ -1,42 +1,152 @@
 .catalog-video {
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
+
   margin-bottom: 30px;
 
   color: @color-main;
   font-size: @font-size-secondary;
   line-height: @line-height-secondary;
+  border: 1px solid rgba(230, 230, 230, 1);
 }
 
 .catalog-video__title {
   margin: 0;
   padding: 25px 40px 25px 90px;
+
+  font-size: @font-size-tertiary;
+  line-height: @line-height-secondary;
+}
+
+.catalog-video__icon {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  fill: #46c1ae;
 }
 
 .catalog-video__video {
   position: relative;
+  height: 150px;
 }
 
 .catalog-video__desc {
+  position: relative;
   padding: 30px;
-  margin: 0;
+}
 
+.catalog-video__text {
+  margin: 0;
   line-height: @line-height-secondary;
 }
 
 .catalog-video__play-btn {
   position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.catalog-video__play-btn-icon {
+  cursor: pointer;
+}
+
+.catalog__btn {
+  width: 100%;
+  margin-top: 30px;
 }
 
 @media @tablet-width {
+  .catalog-video {
+    display: flex;
+    flex-wrap: wrap;
+
+    &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+      transition: all 0.2s;
+    }
+  }
+
+  .catalog-video__play-btn {
+    top: 40%;
+  }
+
   .catalog-video__title {
     padding-bottom: 0;
-    font-size: 20px;
+    font-size: @font-size-tertiary-m;
+  }
+
+  .catalog-video__text {
+    font-size: 15px;
+  }
+
+  .catalog-video__icon {
+    top: 470px;
+    left: 35px;
   }
 
   .catalog-video__video {
     order: -1;
     width: 100%;
     height: 455px;
+  }
+
+  .catalog__btn {
+    margin-top: 50px;
+  }
+
+  .catalog-video__play-btn-icon:hover {
+    transform: scale(1.2);
+  }
+
+  .catalog-video__play-btn:active .catalog-video__play-btn-icon {
+    transform: scale(0.8);
+  }
+}
+
+@media @desktop-width {
+  .catalog-video {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 455px;
+    margin-left: auto;
+  }
+
+  .catalog-video__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 685px;
+  }
+
+  .catalog-video__title,
+  .catalog-video__desc {
+    width: 365px;
+    margin-top: auto;
+    padding: 0 60px 0 80px;
+  }
+
+  .catalog-video__icon {
+    top: 35px;
+    left: 761px;
+  }
+
+  .catalog-video__desc {
+    padding-bottom: 60px;
+    margin-top: auto;
+  }
+
+  .catalog-video__title {
+    padding-top: 60px;
   }
 }

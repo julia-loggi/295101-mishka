@@ -1,6 +1,5 @@
 .form {
-  display: flex;
-  flex-wrap: wrap;
+  position: relative;
 
   color: @color-secondary;
 
@@ -12,8 +11,24 @@
   width: 100%;
 }
 
+.form__item--name,
+.form__item--tel,
+.form__item--email,
+.form__item--extra {
+  margin-bottom: 30px;
+}
+
 .form__btn {
   width: 100%;
+  margin-top: 30px;
+
+  background-color: transparent;
+}
+
+.form__claim {
+  margin: 0;
+  font-weight: 400;
+  font-size: @font-size-secondary;
 }
 
 @media @tablet-width {
@@ -27,13 +42,55 @@
     background-color: @bg-color-secondary;
   }
 
+  .form__item--name,
+  .form__item--tel,
+  .form__item--email,
+  .form__item--extra {
+    margin-bottom: 0;
+  }
+
   .form__claim {
     order: 2;
+    margin-right: 50px;
+
+    font-size: @font-size-tertiary;
+    text-align: right;
+  }
+
+  .form__btn {
+    position: absolute;
+    bottom: -10px;
+    width: 230px;
+
+    margin: 0;
+    left: 50px;
+  }
+
+  .form__item--tel {
+    padding-bottom: 0;
+  }
+  .form__item--email {
+    padding-top: 0;
   }
 }
 
 @media @desktop-width {
+
   .form__item {
-    padding: 50px 150px;
+    padding: 50px 115px;
+  }
+  .form__btn {
+    left: 225px;
+  }
+
+  .form__claim {
+    margin-right: 225px;
+  }
+
+  .form__item--tel {
+    padding-bottom: 0;
+  }
+  .form__item--email {
+    padding-top: 0;
   }
 }
