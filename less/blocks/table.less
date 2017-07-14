@@ -7,9 +7,46 @@
 }
 
 .table__row {
+  vertical-align: top;
+}
+
+.table__row--border {
   border-bottom: 1px solid @color-main;
 }
 
 .table__col {
   padding: 10px 0;
+}
+
+.table__col--link {
+  position: relative;
+  color: #444444;
+  text-decoration: none;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.table__col--link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px;
+  width: 100%;
+  background-color: #46c1ae;
+}
+
+.table__col--1 {
+  white-space: pre;
+}
+
+.table__col--2 {
+  max-width: 230px;
+  padding-left: 28px;
 }

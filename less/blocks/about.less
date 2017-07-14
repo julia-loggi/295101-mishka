@@ -1,5 +1,5 @@
 .about {
-  margin-top: 30px;
+  margin-bottom: 60px;
 
   color: @color-main;
 
@@ -9,15 +9,14 @@
 }
 
 .about__wrapper {
-  width: 260px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
 .about__title {
   margin: 0;
-  margin-bottom: 25px;
-
+  margin-bottom: 45px;
   font-size: @h2-font-size;
   line-height: @line-height-main;
 
@@ -31,18 +30,30 @@
 }
 
 .about__item {
-  padding-top: 60px;
+  position: relative;
+  margin-bottom: 27px;
+  padding-top: 85px;
+}
+
+.about__item-icon {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  fill: #62d1ba;
 }
 
 @media @tablet-width {
+  .about {
+    margin-bottom: 34px;
+  }
+
   .about__wrapper {
-    width: 668px;
+    width: 768px;
     padding: 0 50px;
   }
 
   .about__title {
-    margin-bottom: 40px;
-
     font-size: @h2-font-size-m;
     line-height: @line-height-main-m;
   }
@@ -57,6 +68,7 @@
 
   .about__item {
     width: 50%;
+    margin-bottom: 55px;
   }
 
   .about__item--price,
@@ -70,9 +82,13 @@
 }
 
 @media @desktop-width {
+  .about {
+    margin-bottom: 40px;
+  }
+
   .about__wrapper {
     width: 700px;
-    padding: 0 225px;
+    padding: 0;
   }
 
   .about__list {
@@ -80,7 +96,13 @@
   }
 
   .about__title {
+    margin-bottom: 44px;
     font-size: @h2-font-size-l;
     line-height: @line-height-main-l;
+  }
+
+  .about__item {
+    margin-bottom: 55px;
+    padding-top: 56px;
   }
 }
